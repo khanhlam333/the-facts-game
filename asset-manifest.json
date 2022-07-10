@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/the-facts-game/static/css/main.37c09534.css",
+    "main.js": "/the-facts-game/static/js/main.8c513e8a.js",
+    "static/js/787.e2524a6b.chunk.js": "/the-facts-game/static/js/787.e2524a6b.chunk.js",
+    "index.html": "/the-facts-game/index.html",
+    "main.37c09534.css.map": "/the-facts-game/static/css/main.37c09534.css.map",
+    "main.8c513e8a.js.map": "/the-facts-game/static/js/main.8c513e8a.js.map",
+    "787.e2524a6b.chunk.js.map": "/the-facts-game/static/js/787.e2524a6b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37c09534.css",
+    "static/js/main.8c513e8a.js"
+  ]
+}
