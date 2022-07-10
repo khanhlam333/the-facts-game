@@ -1,38 +1,108 @@
-.App {
+.app {
+  margin-bottom: 1.5rem;
+}
+.factsNumUnit {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+.fact {
+  text-align: center;
+  font-weight: bold;
+}
+#previous, #next {
+  padding: 1rem;
+  border: solid;
+  border-radius: 100px;
+  text-align: center;
+  width: 7rem;
+}
+#previous:hover, #next:hover {
+  background-color: black;
+  color: white;
+}
+.factsNum {
+  border: solid;
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  align-self: center;
+  border-radius: 100px;
+  padding-top: 0.5rem;
+}
+.showcase {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  margin-left: 4rem;
+}
+
+.span {
+  border-style: none none solid none;
+  border-color: black;
+  width: 0.8rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 1rem;
+}
+.flexMiss {
+  display: flex;
+  gap: 0.5rem;
+  height: 2.5rem;
+}
+
+#miss {
+  font-weight: bold;
+  text-align: center;
+}
+
+#label {
+  font-weight: bold;
+}
+
+.hints {
+  border: solid pink;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+#hint {
+  font-weight: bold;
+  text-align: center;
+}
+
+#win, #lose {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.buttonAnnounce {
+  display: block;
+  margin: auto;
+}
+#title {
+  text-align: center;
+}
+
+.facts {
+  margin: 0px 1rem;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.factsBoard {
+  margin-top: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#buttonPlayAgain {
+  display: block;
+  margin: auto;
+  border-radius: 3px;
+  margin-top: 2rem;
 }

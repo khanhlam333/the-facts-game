@@ -1,0 +1,10 @@
+.content {
+    border: solid pink;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 35rem;
+}
+
+#source {
+    font-size: 0.8rem;
+}
