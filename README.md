@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# The Facts Game
+## Overview
+The Facts Game is based on [Hangman](https://en.wikipedia.org/wiki/Hangman_(game)), but instead of a hangman, the players'll get to read facts about a random subject belonging to the category you've chosen.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The word to guess is represented by a row of dashes representing each letter of the word. If the player suggests a letter which occurs in the word, the letter will appear in its correct position, and the Number of Facts will increase. If the suggested letter does not occur in the word, the Number of Facts decrease.
 
-## Available Scripts
+The goal of the game is not entirely about figuring out the mysterious word, but it's more about playing strategically to earn as many Number of Facts as possible, so that at the end of the game, you get to gain more interesting knowledge about the subject.
 
-In the project directory, you can run:
+[React](https://reactjs.org/) was used to build The Facts Game.
 
-### `npm start`
+**Note: All the facts shown in the game were all taken from multiple online sources, which I have noted at the end of each fact.** 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Rules
+1. The player can either guess one letter at a time or guess the whole word
+2. Whenever the player guesses a letter correctly, the Number of Facts will increase by 1. However, if the player guesses a letter incorrectly, it will be decreased by 1
+3. Whenever the player guesses an entire word correctly in the first try with only one hint to go by, the Number of Facts will increase by 5
+4. Whenever the player guesses an entire word correctly after several tries, with only one hint to go by, the Number of Facts will increase by 3
+5. Whenever the player guesses an entire word correctly after several tries, with more than one hints, the Number of Facts will increase by 2
+6. However, if the player guesses the entire word incorrectly, the Number of Facts will decrease by 2
+---
+You can play the game [here](https://khanhlam333.github.io/the-facts-game/)
